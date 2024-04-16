@@ -1,0 +1,101 @@
+.keyword {
+    font-weight: bold;
+}
+
+.trace:not(.trace-pretty) {
+    pre {
+        white-space: pre-wrap;
+    }
+}
+
+.declaration_body {
+    padding: 0 3px;
+}
+
+.declaration:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 5px 0;
+    background: #ccc;
+}
+
+.declaration-definition_value {
+    margin-left: 15px;
+}
+
+.declaration-definition_equations {
+    margin-left: 35px;
+
+    > li::marker {
+        color: #888;
+    }
+}
+
+.declaration-interactive_steps {
+    margin-left: 35px;
+
+    > li::marker {
+        color: #888;
+    }
+}
+
+.step-tactic {
+    > details > summary {
+        display: flex;
+        align-items: center;
+    }
+
+    > details > summary > pre {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    > details > summary::marker {
+        color: #888;
+        margin-right: 5px;
+    }
+}
+
+.step-tactic_event {
+    overflow-x: auto;
+}
+
+.event {
+    border-collapse: collapse;
+}
+
+.event-sequence {
+    > tbody > tr > td {
+        padding: 1px;
+        border: 2px solid;
+        border-color: blueviolet;
+    }
+}
+
+.event-dispatch {
+    > tbody > tr > td {
+        padding: 1px;
+        border: 2px solid;
+        border-color: crimson;
+    }
+}
+
+.event-tactic {
+    &:not(.event-tactic-deep) > tbody > tr > td {
+        background: rgba(0, 0, 0, 7%);
+    }
+
+    &.event-tactic-deep > tbody > tr > td:has(> .event-tactic) {
+        border-top: 1px solid #555;
+    }
+}
+
+.event-message {
+    > tbody > tr > td {
+        padding: 1px;
+        border: 2px solid;
+        border-color: darkgreen;
+    }
+}

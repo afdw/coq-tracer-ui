@@ -1,0 +1,20 @@
+.app {
+    width: 100%;
+    min-height: 100%;
+}
+
+.app_options {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: lightgray;
+    border-bottom: 1px solid gray;
+
+    > label {
+        margin: 3px 7px;
+    }
+
+    > label > span {
+        margin-right: 3px;
+    }
+}
