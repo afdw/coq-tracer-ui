@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+th {
+    font-weight: unset;
+}
+
+html,
+body,
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+pre,
+code {
+    font-family: "Noto Sans Mono", Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+}
